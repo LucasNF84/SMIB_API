@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 // Cargar rutas
-// var producto_routes = require('./routes/producto');
+ var slot_routes = require('./routes/slot');
 
 // Middlewares
 app.use(bodyParser.urlencoded({extended: false}));
@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 });
 
 // Rutas
-// app.use('/api', producto_routes);
+ app.use('/api/slot', slot_routes);
 
 // Exportar
 module.exports = app;

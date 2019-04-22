@@ -4,7 +4,7 @@ var Sequelize = require('sequelize');
 
 const sequelize = new Sequelize({
     dialect: 'sqlite',
-    storage: '../db/smibDB.db',
+    storage: './db/smibDB.db',
     pool: {
         max: 5,
         min: 0,
